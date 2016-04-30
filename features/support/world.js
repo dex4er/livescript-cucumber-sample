@@ -5,12 +5,12 @@
  * with utility properties,
  * destined to be used in step definitions
  */
-var cwd = process.cwd();
-var path = require('path');
+var cwd = process.cwd()
+var path = require('path')
 
-var Calculator = require(path.join(cwd, 'lib', 'calculator'));
+var Calculator = require(path.join(cwd, 'lib', 'calculator'))
 
-module.exports = function() {
-    this.calculator = new Calculator();
-    this.expect = require('chai').expect;
+module.exports = function () {
+  this.calculator = new Calculator()
+  this.expect = require('chai').expect
 }
