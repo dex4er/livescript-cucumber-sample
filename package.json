@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Minimal project to show how to setup  [cucumber](http: //cukes.info/) for nodejs environment",
   "scripts": {
-    "test": "cucumber.js"
+    "compile": "lsc -c package.json.ls",
+    "test": "cucumber.js --compiler ls:livescript"
   },
   "repository": {
     "type": "git",
